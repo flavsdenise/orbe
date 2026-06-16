@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: flavsdenise/orbe
+
+media_folder: "imagens"
+public_folder: "/imagens"
+
+collections:
+  - name: "criticas"
+    label: "Críticas"
+    folder: "criticas"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+
+      - {
+          label: "Autor",
+          name: "author",
+          widget: "select",
+          options:
+            [
+              "Flávia Paiva",
+              "Marcus Barreto"
+            ]
+        }
+
+      - {
+          label: "Categoria",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              "Cinema",
+              "Música"
+            ]
+        }
+
+      - { label: "Imagem", name: "image", widget: "image" }
+
+      - { label: "Conteúdo", name: "body", widget: "markdown" }

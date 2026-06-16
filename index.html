@@ -1,38 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ORBE</title>
-
-<style>
-body{
-    background:#0f0f14;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-    padding:80px;
-}
-
-h1{
-    color:#8b5cf6;
-    font-size:4rem;
-}
-
-p{
-    color:#b0b0b0;
-    font-size:1.2rem;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>ORBE</h1>
+    <header>
+        <div class="container">
 
-<p>
-Cinema, séries e cultura pop em órbita.
-</p>
+            <h1 class="logo">
+                <a href="index.html">ORBE</a>
+            </h1>
+
+            <nav>
+                <a href="cinema.html">Cinema</a>
+                <a href="musica.html">Música</a>
+                <a href="criticas.html">Críticas</a>
+                <a href="autores.html">Autores</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <span class="label">
+                    CRÍTICA EM DESTAQUE
+                </span>
+
+                <img
+                    src="imagens/nosferatu.jpg"
+                    alt="Nosferatu"
+                    class="hero-image">
+
+                <h2>Nosferatu</h2>
+
+                <p class="hero-author">
+                    Por
+                    <a href="autores/flavia-paiva.html">
+                        Flávia Paiva
+                    </a>
+                </p>
+
+                <p>
+                    Robert Eggers revisita o clássico do horror com uma elegância sombria e hipnótica.
+                </p>
+
+                <a href="criticas/nosferatu.html" class="button">
+                    Ler crítica
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="reviews">
+
+            <div class="container">
+
+                <span class="label">
+                    ARQUIVO
+                </span>
+
+                <h3>Últimas críticas</h3>
+
+                <div class="reviews-grid">
+
+                    <article class="review-item">
+
+                        <img
+                            src="imagens/nosferatu.jpg"
+                            alt="Nosferatu"
+                            class="review-thumb">
+
+                        <h4>
+                            <a href="criticas/nosferatu.html">
+                                Nosferatu
+                            </a>
+                        </h4>
+
+                        <p class="review-author">
+                            Cinema · Flávia Paiva
+                        </p>
+
+                    </article>
+
+                    <article class="review-item">
+
+                        <img
+                            src="imagens/the-brutalist.jpg"
+                            alt="The Brutalist"
+                            class="review-thumb">
+
+                        <h4>
+                            <a href="criticas/the-brutalist.html">
+                                The Brutalist
+                            </a>
+                        </h4>
+
+                        <p class="review-author">
+                            Cinema · Marcus Barreto
+                        </p>
+
+                    </article>
+
+                    <article class="review-item">
+
+                        <img
+                            src="imagens/brat.jpeg"
+                            alt="BRAT"
+                            class="review-thumb">
+
+                        <h4>
+                            <a href="criticas/brat.html">
+                                BRAT
+                            </a>
+                        </h4>
+
+                        <p class="review-author">
+                            Música · Marcus Barreto
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <p>ORBE — Cinema e música.</p>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
+
