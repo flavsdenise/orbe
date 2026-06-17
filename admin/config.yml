@@ -1,6 +1,8 @@
 backend:
   name: github
   repo: flavsdenise/orbe
+  base_url: https://orbe-cms-auth.flavs.workers.dev
+  auth_endpoint: auth
 
 media_folder: "imagens"
 public_folder: "/imagens"
@@ -19,22 +21,14 @@ collections:
           label: "Autor",
           name: "author",
           widget: "select",
-          options:
-            [
-              "Flávia Paiva",
-              "Marcus Barreto"
-            ]
+          options: ["Flávia Paiva", "Marcus Barreto"]
         }
 
       - {
           label: "Categoria",
           name: "category",
           widget: "select",
-          options:
-            [
-              "Cinema",
-              "Música"
-            ]
+          options: ["Cinema", "Música"]
         }
 
       - { label: "Imagem", name: "image", widget: "image" }
